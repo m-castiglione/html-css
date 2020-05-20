@@ -1,0 +1,105 @@
+.name {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
+
+.content{ 
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow:hidden;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+  }
+  .content__container{
+  	    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+  } 
+
+
+    .content__container__text{ 
+      display: inline;
+      float: left;
+      margin: 0;
+  }
+
+    .content__container__list {
+      margin-top: 0;
+      padding-left: 110px;
+      text-align: left;
+      list-style: none;
+      
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+  }
+
+      .content__content__list__item {
+        line-height:40px;
+        margin:0;
+      }
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+
+.gameCards {
+	align-self: flex-end;
+	justify-content: space-between;
+}
+
+.steamCard {
+	float: left;
+	transition: all 0.5s ease;
+}
+
+.steamCard:hover {
+	transform:rotate(-10deg);
+}
+
+.playstationCard {
+	float: right;
+	transition: all 0.5s ease;
+}
+
+.playstationCard:hover {
+	transform:rotate(-10deg);
+}
+
+.profilePic {
+	position: absolute;
+	bottom: 8px;
+}
+
+div p{
+	color: white;
+}
