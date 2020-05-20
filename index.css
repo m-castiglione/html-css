@@ -99,3 +99,7 @@
 	position: absolute;
 	bottom: 8px;
 }
+
+div p{
+	color: white;
+}

@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
-    
-</body>
+	<style>
+	body {
+		background-image: url('https://i.pinimg.com/originals/22/d3/86/22d386aa840fc7546a451a41bcdd2747.jpg');
+		background-size: fill;
+	}
+	</style>
+ <div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Seriously, I will really get your message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div> 
+    </body>
 </html>
