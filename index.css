@@ -72,12 +72,13 @@
 }
 
 
-/*.gameCards {
-	display: flex;
+.gameCards {
+	align-self: flex-end;
 	justify-content: space-between;
 }
 
 .steamCard {
+	float: left;
 	transition: all 0.5s ease;
 }
 
@@ -86,9 +87,15 @@
 }
 
 .playstationCard {
+	float: right;
 	transition: all 0.5s ease;
 }
 
 .playstationCard:hover {
 	transform:rotate(-10deg);
-}*/
+}
+
+.profilePic {
+	position: absolute;
+	bottom: 8px;
+}
